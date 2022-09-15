@@ -1,0 +1,386 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* utility classes */
+.btn{
+    font-family: 'Fira Mono', monospace;
+    background-color: transparent;
+    color: aquamarine;
+    border: 2px solid aquamarine;
+    padding: 21px 26px;
+    margin: 35px 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.btn:hover{
+    transform: scale(1.1) translateX(30px);
+    background-color: rgb(72, 240, 184);
+    color: #112240;
+    font-weight: bolder;
+}
+
+
+
+/* navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    background-color: #0a192f;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* navbar: logo & image */
+#logo{
+    margin: 20px;  
+}
+
+#logo img{
+    height: 46px;
+    margin: 12px;
+}
+
+/* navbar: list */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5em;
+}
+ 
+#navbar ul li a{
+    color: aquamarine;
+    display: block;
+    padding: 4px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.24s ease-in-out;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li a:hover{
+    background-color: #112240;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 3px aquamarine;
+} 
+
+/* home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+    min-height: 100vh;
+    padding: 0px;
+}
+
+#home::before{
+    content: "";
+    background-color: #112240;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+#homecontainer{
+    margin: 0px 0px 0px 160px;
+    padding: 20px 20px;
+}
+
+#home h1{
+    color: aquamarine;
+    margin: 20px 12px;
+    font-size: 16px;
+    font-family: 'Fira Mono', monospace;
+
+}
+#home h2{
+    color: rgb(253, 254, 254);
+    font-size: 80px;
+    margin: 12px 12px;
+    font-family: 'Ubuntu', sans-serif;  
+}
+
+#home h3{
+    color: rgb(163, 188, 180);
+    font-size: 80px;
+    margin: 12px 12px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#home p{
+    color: rgb(185, 205, 198);
+    font-size: 20px;
+    margin: 20px 12px;
+    width: 650px;
+    height: 70px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* about section */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#about::before{
+    content: "";
+    background-color: #31405b;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+}
+
+#about h2{
+    font-size: 60px;
+    font-family: 'ubuntu';
+    color: aquamarine;
+    position: relative;
+    top: 45px;
+    right: 322px;
+
+}
+
+.inner{
+    position: relative;
+    width: 70vw;
+    font-family: 'ubuntu';
+    color: whitesmoke;
+    padding: 30px 0px 30px 0px;
+    top: 50px;
+}
+
+.inner p{
+    padding: 10px;
+    width: 35vw;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+
+}
+
+.skills-list{
+    display: flex;
+    width: fit-content;
+    font-size: 1.5em;
+    font-family: 'ubuntu';
+    color: #b8b77a;
+    padding: 30px 0px 30px 0px;
+    margin: 0px 68px;
+    list-style: none;
+}
+
+
+.skills-list li::before{
+    content: "▹";
+    color: aquamarine;
+    padding: 7px;
+}
+
+
+.inner img{
+    margin: 94px 46px 0px 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    transition: all 0.4s ease-in;
+}
+
+.inner img:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 3px 2px aquamarine;
+}
+
+/* experience section */
+
+#projects{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #112240;
+}
+
+#projects h1{
+    padding: 20px;
+    font-family: 'ubuntu';
+    color: aquamarine;
+    font-size: 40px;
+}
+
+.box{
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.7s;
+    border: 2px solid aquamarine;
+    height: 60vh;
+    padding: 20px;
+    color: aquamarine;
+    font-family: 'ubuntu';
+    filter: grayscale(80%);
+}
+
+.box:hover{
+    flex: 5;
+    filter: grayscale(0);
+}
+
+
+.box p{
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+.box:hover p{
+    opacity: 100%;
+    transform: scale(0.9);
+    
+}
+
+.box:nth-child(2){
+    background-color: rgb(76, 126, 126);
+}
+
+.box:nth-child(3){
+    background-color: rgb(89, 140, 95);
+}
+
+.box:nth-child(4){
+    background-color: rgb(180, 182, 125);
+}
+
+.box:nth-child(5){
+    background-color: rgb(68, 107, 81);
+}
+
+.box:nth-child(6){
+    background-color: rgb(132, 127, 105);
+}
+
+
+/* contact section */
+
+#contact{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color: #364052;
+}
+
+
+textarea{
+    resize: none;
+}
+
+.contact-head{
+    text-align: center;
+    display: flex;
+}
+
+.contact-head h1{
+    position: relative;
+    top: 142px;
+    left: 510px;
+    color: aquamarine;
+
+}
+
+.contact-head p{
+    position: relative;
+    top: 186px;
+    left: 280px;
+    color: white;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+form input{
+    display: flex;
+    background-color: wheat;
+    border-radius: 40px;
+    width: 170px;
+    height: 40px;
+    flex-direction: column;
+}
+
+form label{
+    color: aquamarine;
+    margin: 10px;
+}
+
+
+/* footer section */
+
+#footer{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #112240;
+}
+
+
+.foot-contact{
+    margin: 15px;
+    color: aquamarine;
+
+    
+}
+
+.foot-follow{
+    margin: 15px;
+    color: aquamarine;
+
+    
+}
+
+.foot-text{
+    margin: 30px;
+    color: aquamarine;
+
+}
+
+
