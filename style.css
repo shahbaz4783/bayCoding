@@ -296,59 +296,105 @@ html{
 #contact{
     width: 100vw;
     height: 100vh;
-    display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     background-color: #364052;
-}
-
-
-textarea{
-    resize: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-head{
-    text-align: center;
-    display: flex;
+    align-self: center;
 }
 
 .contact-head h1{
-    position: relative;
-    top: 142px;
-    left: 510px;
+    font-size: 4em;
     color: aquamarine;
-
+    margin: 90px 0px 0px 0px;
+    text-shadow: 3px 3px 10px aquamarine;
+    font-family: 'ubuntu';
 }
 
 .contact-head p{
-    position: relative;
-    top: 186px;
-    left: 280px;
-    color: white;
-}
-
-
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    font-size: 1.2em;
+    color: whitesmoke;
+    width: max-content;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Fira Mono';
 
 }
 
-form input{
-    display: flex;
-    background-color: wheat;
-    border-radius: 40px;
-    width: 170px;
-    height: 40px;
-    flex-direction: column;
+
+#form{
+    align-self: center;
+    margin: 100px;
 }
 
-form label{
+.name-email{
+    margin: 23px auto;
+}
+
+#name{
+    padding: 10px;
+    border-radius: 30px;
+    width: 200px;
+    border: 2px solid aquamarine;
+    background-color: transparent;
+    box-shadow: 2px 2px 4px aquamarine;
+
+}
+
+#email{
+    padding: 10px;
+    border-radius: 30px;
+    width: 200px;
+    border: 2px solid aquamarine;
+    background-color: transparent;
+    box-shadow: 2px 2px 4px aquamarine;
+
+
+
+}
+
+.txt-area{
+    margin: 30px;
+}
+
+textarea{
+    resize: none;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid aquamarine;
+    background-color: transparent;
+    box-shadow: 2px 2px 4px aquamarine;
+}
+
+#submit{
+    width: 190px;
+    height: 60px;
+    margin: 20px 109px;
+    border-radius: 30px;
+    border: 3px solid aquamarine;
+    background-color: transparent;
+    color: greenyellow;
+    font-family: 'ubuntu';
+    font-size: 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+
+#submit:hover{
+    background-color: aquamarine;
+    color: #364052;
+    transform: scale(1.2);
+
+}
+
+::placeholder{
     color: aquamarine;
-    margin: 10px;
+    opacity: 0.5;
 }
+
+
 
 
 /* footer section */
@@ -364,23 +410,49 @@ form label{
 
 
 .foot-contact{
-    margin: 15px;
     color: aquamarine;
+    align-items: flex-start;
+    font-family: 'ubuntu';
+    width: max-content;
+    margin: 20px auto;
 
-    
 }
 
 .foot-follow{
-    margin: 15px;
     color: aquamarine;
-
-    
+    font-family: 'ubuntu';
+    width: max-content;
+    margin: 20px auto;
 }
 
 .foot-text{
     margin: 30px;
     color: aquamarine;
+    font-family: 'ubuntu';
+}
+
+#footer .fa{
+    color: whitesmoke;
+    width: 40px;
+}
+
+#footer .fa-envelope{
+    color: whitesmoke;
+    width: 40px;
+    text-decoration: none;
+}
+
+#footer .fa-discord{
+    color: whitesmoke;
+    width: 40px;
+    text-decoration: none;
 
 }
 
+#footer .fa-telegram{
+    color: whitesmoke;
+    width: 40px;
+    text-decoration: none;
+
+}
 
