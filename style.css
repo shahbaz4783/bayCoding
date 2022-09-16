@@ -340,6 +340,8 @@ html{
     border: 2px solid aquamarine;
     background-color: transparent;
     box-shadow: 2px 2px 4px aquamarine;
+    color: rgb(213, 217, 161);
+
 
 }
 
@@ -350,9 +352,7 @@ html{
     border: 2px solid aquamarine;
     background-color: transparent;
     box-shadow: 2px 2px 4px aquamarine;
-
-
-
+    color: rgb(213, 217, 161);
 }
 
 .txt-area{
@@ -366,6 +366,8 @@ textarea{
     border: 2px solid aquamarine;
     background-color: transparent;
     box-shadow: 2px 2px 4px aquamarine;
+    color: rgb(213, 217, 161);
+
 }
 
 #submit{
