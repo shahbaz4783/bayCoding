@@ -1,11 +1,13 @@
 *{
     overflow: scroll ;
+    margin: 0;
+    padding: 0;
 }
 
 /* navigation */
 #navbar{
-    /* flex-direction: column; */
     width: 100vw;
+    overflow: hidden;
 }
 
 
@@ -14,7 +16,10 @@
     position: fixed;
     bottom: 0%;
     width: 100vw;
+    height: 8vh;
     background-color: #0a192f;
+    border-top: 2px solid aquamarine;
+
 }
 
 #navbar li a:hover{
@@ -41,34 +46,75 @@
 
 /* home */
 
-#home{
+#homecontainer{
+    margin: 0;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#home h1{
+    font-size: 1rem;
+    width: 100vw;
+    padding: 0;
+
 }
 
 #home h2{
     font-size: 3rem;
+    width: 80vw;
 }
 
 #home h3{
     font-size: 3rem;
+    width: 80vw;
 
-}
-
-#home h2{
-    font-size: 3rem;
 
 }
 #home p{
-    font-size: 3rem;
+    font-size: 1rem;
+    width: 80vw;
+    height: 12vh;
 
 }
-
 
 
 /* about */
 
+.inner img{
+    height: 30vh;
+    width: 50vw;
+    opacity: 0.3;
+}
+
+#about h2{
+    width: 100vw;
+    left: 80px;
+    top: 0;
+
+}
+
+#about p{
+    width: 100vw;
+    flex-wrap: wrap;
+  
+
+}
+
+.skills-list{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    flex-direction: column;
+}
+
 
 
 /* projects */
+
+#projects{
+    height: 200vh;
+}
+
 #project h1{
     top: 200px;
 }
@@ -79,8 +125,40 @@
 }
 
 
+
+
 /* contact */
 
+#contact{
+    overflow: hidden;
+}
 
+.contact-head{
+    width: 90vw;
+    height: 45vh;
+}
+
+.contact-head p{
+    width: 90vw;
+}
+
+#contact br{
+    display: none;
+}
+
+#form{
+    padding: 0;
+    margin: 0;
+}
 
 /* footer */
+
+.foot-text{
+    position: relative;
+    bottom: 50px;
+}
+
+hr{
+    position: relative;
+    bottom: 20px;
+}
