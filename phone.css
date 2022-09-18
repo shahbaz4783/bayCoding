@@ -4,7 +4,39 @@
 
 /* navigation */
 #navbar{
-    flex-direction: column;
+    /* flex-direction: column; */
+    width: 100vw;
+}
+
+
+#navbar ul{
+    flex-direction: row;
+    position: fixed;
+    bottom: 0%;
+    width: 100vw;
+    background-color: #0a192f;
+}
+
+#navbar li a:hover{
+    opacity: 0.3;
+    box-shadow: none;
+    background-color: none;
+    border: 2px solid aquamarine;
+}
+
+#navbar ul li a{
+    width: fit-content;
+
+}
+
+
+#navbar::before{
+    content: "";
+    background-color: #0a192f;
+    position: absolute;
+    height: 100%;
+    width: 60vh;
+    z-index: -1;
 }
 
 /* home */

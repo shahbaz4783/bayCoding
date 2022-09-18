@@ -11,27 +11,22 @@ html{
 
 /* utility classes */
 .btn{
-    font-family: 'Fira Mono', monospace;
+    width: 190px;
+    height: 60px;
+    margin: 40px 109px;
+    border-radius: 30px;
+    border: 3px solid aquamarine;
     background-color: transparent;
-    color: aquamarine;
-    border: 2px solid aquamarine;
-    padding: 21px 26px;
-    margin: 35px 15px;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-
-}
-
-.btn:hover{
-    transform: scale(1.1) translateX(30px);
-    background-color: rgb(72, 240, 184);
-    color: #112240;
+    color: aliceblue;
+    font-family: 'Fira Mono';
+    font-size: 20px;
+    transition: 0.5s;
     font-weight: bolder;
 }
 
-
+.btn:hover{
+    box-shadow: 3px 1px 10px 1px aquamarine;
+}
 
 /* navbar */
 #navbar{
@@ -45,7 +40,7 @@ html{
     background-color: #0a192f;
     position: absolute;
     height: 100%;
-    width: 200vh;
+    width: 100vw;
     z-index: -1;
 }
 
@@ -72,7 +67,7 @@ html{
 #navbar ul li a{
     color: aquamarine;
     display: block;
-    padding: 4px 30px;
+    padding: 4px 20px;
     border-radius: 20px;
     text-decoration: none;
     transition: all 0.24s ease-in-out;
@@ -216,20 +211,18 @@ html{
     width: 340px;
     height: 340px;
     border-radius: 10px;
-    transition: all 0.4s ease-in;
+    box-shadow: 3px 3px 10px 1px aquamarine;
 }
 
-.inner img:hover{
-    transform: scale(1.1);
-    box-shadow: 2px 2px 3px 2px aquamarine;
-}
+
 
 /* experience section */
 
 #projects{
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-color: #112240;
@@ -246,21 +239,21 @@ html{
 
 .box{
     position: relative;
-    flex: 1;
+    z-index: -1;
     overflow: hidden;
     cursor: pointer;
     transition: 0.7s;
     border: 2px solid aquamarine;
-    height: 60vh;
-    padding: 20px;
+    height: 30vh;
+    width: 30vw;
+    padding: 30px;
     color: aquamarine;
     font-family: 'ubuntu';
-    filter: grayscale(80%);
+    margin: 30px;
 }
 
 .box:hover{
-    flex: 5;
-    filter: grayscale(0);
+    /* box-shadow: 2px 2px 2px 2px aquamarine; */
 }
 
 
@@ -291,7 +284,7 @@ html{
 }
 
 .box:nth-child(6){
-    background-color: rgb(132, 127, 105);
+    background-color: rgb(73, 96, 116);
 }
 
 
@@ -373,26 +366,6 @@ textarea{
 
 }
 
-#submit{
-    width: 190px;
-    height: 60px;
-    margin: 20px 109px;
-    border-radius: 30px;
-    border: 3px solid aquamarine;
-    background-color: transparent;
-    color: greenyellow;
-    font-family: 'ubuntu';
-    font-size: 20px;
-    transition: 0.5s;
-    font-weight: bolder;
-}
-
-#submit:hover{
-    background-color: aquamarine;
-    color: #364052;
-    transform: scale(1.2);
-
-}
 
 ::placeholder{
     color: aquamarine;
