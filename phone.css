@@ -1,0 +1,54 @@
+*{
+    overflow: scroll ;
+}
+
+/* navigation */
+#navbar{
+    flex-direction: column;
+}
+
+/* home */
+
+#home{
+}
+
+#home h2{
+    font-size: 3rem;
+}
+
+#home h3{
+    font-size: 3rem;
+
+}
+
+#home h2{
+    font-size: 3rem;
+
+}
+#home p{
+    font-size: 3rem;
+
+}
+
+
+
+/* about */
+
+
+
+/* projects */
+#project h1{
+    top: 200px;
+}
+
+.box{
+    width: 300px;
+    height: 30vh;
+}
+
+
+/* contact */
+
+
+
+/* footer */

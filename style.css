@@ -37,7 +37,7 @@ html{
 #navbar{
     display: flex;
     align-items: center;
-    position: relative;
+    position: fixed;
 }
 
 #navbar::before{
@@ -45,7 +45,7 @@ html{
     background-color: #0a192f;
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 200vh;
     z-index: -1;
 }
 
@@ -149,6 +149,8 @@ html{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    position: relative;
+    z-index: -2;
 }
 
 #about::before{
@@ -157,7 +159,7 @@ html{
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -3;
+    z-index: -2;
 }
 
 #about h2{
@@ -231,6 +233,8 @@ html{
     align-items: center;
     justify-content: center;
     background-color: #112240;
+    position: relative;
+    z-index: -2;
 }
 
 #projects h1{
