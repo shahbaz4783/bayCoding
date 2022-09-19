@@ -28,7 +28,8 @@
 }
 
 #navbar ul li a{
-    width: fit-content;
+    width: 25vw;
+    /* margin: 2px 0px 0px -10px; */
 
 }
 
