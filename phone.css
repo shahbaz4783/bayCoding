@@ -1,5 +1,4 @@
 *{
-    overflow: scroll ;
     margin: 0;
     padding: 0;
 }
@@ -80,6 +79,7 @@
 /* about */
 
 #about{
+    margin: 0;
     overflow: hidden;
 }
 
