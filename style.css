@@ -171,10 +171,10 @@ html{
 
 .inner{
     position: relative;
-    width: 70vw;
+    width: 90vw;
     font-family: 'ubuntu';
     color: whitesmoke;
-    padding: 30px 0px 30px 0px;
+    padding: 10px 0px 30px 0px;
     top: 50px;
 }
 

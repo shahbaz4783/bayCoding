@@ -19,7 +19,6 @@
     height: 8vh;
     background-color: #0a192f;
     border-top: 2px solid aquamarine;
-
 }
 
 #navbar li a:hover{
@@ -80,6 +79,10 @@
 
 /* about */
 
+#about{
+    overflow: hidden;
+}
+
 .inner img{
     height: 30vh;
     width: 50vw;
@@ -96,7 +99,9 @@
 #about p{
     width: 100vw;
     flex-wrap: wrap;
-  
+    padding: 10px 30px;
+  text-align: left;
+  font-size: 1.1rem;
 
 }
 
