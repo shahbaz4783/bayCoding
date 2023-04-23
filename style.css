@@ -317,7 +317,7 @@ html{
 }
 
 
-#form{
+form{
     align-self: center;
     margin: 100px;
 }
@@ -327,7 +327,7 @@ html{
 }
 
 #name{
-    padding: 10px;
+    padding: 20px;
     border-radius: 30px;
     width: 200px;
     border: 2px solid aquamarine;
@@ -339,7 +339,7 @@ html{
 }
 
 #email{
-    padding: 10px;
+    padding: 20px;
     border-radius: 30px;
     width: 200px;
     border: 2px solid aquamarine;
@@ -360,7 +360,6 @@ textarea{
     background-color: transparent;
     box-shadow: 2px 2px 4px aquamarine;
     color: rgb(213, 217, 161);
-
 }
 
 
@@ -368,8 +367,6 @@ textarea{
     color: aquamarine;
     opacity: 0.5;
 }
-
-
 
 
 /* footer section */
@@ -428,6 +425,4 @@ textarea{
     color: whitesmoke;
     width: 40px;
     text-decoration: none;
-
 }
-
